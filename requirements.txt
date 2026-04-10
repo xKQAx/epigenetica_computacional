@@ -1,0 +1,5 @@
+GEOparse==2.0.4
+pandas==3.0.2
+jupytext==1.19.1
+ipykernel==7.2.0
+numpy==2.4.4
