@@ -15,7 +15,7 @@ implementado en Python con notebooks Jupyter compatibles con Jupytext.
 Clonar el repositorio y instalar las dependencias:
 
 ```bash
-git https://github.com/xKQAx/epigenetica_computacional.git
+git clone https://github.com/xKQAx/epigenetica_computacional.git
 cd epigenetica_computacional
 pip install -r requirements.txt
 ```
