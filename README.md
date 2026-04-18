@@ -10,9 +10,11 @@ implementado en Python con notebooks Jupyter compatibles con Jupytext.
 - Python 3.8 o superior
 - pip
 
-## Instalación
+---
 
-Clonar el repositorio y instalar las dependencias:
+## Instalación en Windows
+
+Clonar el repositorio e instalar las dependencias:
 
 ```bash
 git clone https://github.com/xKQAx/epigenetica_computacional.git
@@ -20,7 +22,39 @@ cd epigenetica_computacional
 pip install -r requirements.txt
 ```
 
+## Instalación en Ubuntu / Debian
+
+En sistemas Linux con Python administrado por el sistema operativo,
+es necesario usar un entorno virtual antes de instalar las dependencias.
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/xKQAx/epigenetica_computacional.git
+cd epigenetica_computacional
+
+# Instalar dependencias del sistema si no están disponibles
+sudo apt install python3-full python3-venv -y
+
+# Crear y activar el entorno virtual
+python3 -m venv venv_tarea1
+source venv_tarea1/bin/activate
+
+# Instalar las dependencias del proyecto
+pip install -r requirements.txt
+```
+
+El entorno virtual debe activarse cada vez que se abra una terminal nueva
+antes de ejecutar el notebook:
+
+```bash
+source venv_tarea1/bin/activate
+```
+
+---
+
 ## Estructura del proyecto
+
+```
 epigenetica_computacional/
 ├── requirements.txt
 ├── README.md
@@ -28,9 +62,12 @@ epigenetica_computacional/
 │   ├── tarea1_fenodata_GSE116378.ipynb
 │   └── tarea1_fenodata_GSE116378.py
 ├── data_geo/
-│   └── GSE116378_series_matrix.txt.gz
+│   └── GSE116378_family.soft.gz
 └── resultados/
-└── GSE116378_phenodata.csv
+    └── GSE116378_phenodata.csv
+```
+
+---
 
 ## Tareas
 
